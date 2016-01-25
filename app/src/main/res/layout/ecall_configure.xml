@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/configure" android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textveiw"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/img_contact"
+        android:adjustViewBounds="true"
+        android:layout_gravity="right" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select from contacts"
+        android:onClick="onClickSelectContact"
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save" />
+
+    <Button android:id="@+id/add_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/add_widget"
+        android:layout_marginTop="8dp" />
+
+    <EditText android:id="@+id/appwidget_text" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:inputType="text"
+        android:visibility="invisible" />
+
+</LinearLayout>
